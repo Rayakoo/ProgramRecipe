@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memasak by farah</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="judulbesar">
+            <img src="image\LOGO_memasak.png" class="LOGO" >
+            <h1 class="fontjudul">MEMASAK</h1>    
+        </div>
+        
+        <nav>
+            <div class="searchbar">
+                <input type="text" placeholder="cari resep" name="search" id="food">
+                <button class="button-search" onclick="loadrecipe()">
+                    <img src="image/loupe.png" class="image" width="25"height="25">
+                    
+                </button>
+            </div>
+
+            
+        </nav>
+
+    </header>
+    <div class="container1">
+        <main>
+
+            <div class="nama_makanan">
+                <h2 id="food_name">Makanan </h2> 
+                <div class="isi_nama">
+                    <t> sumber :</t>
+                    <a id="source" href="#" target="_blank">Source</a>
+                    <br>
+                    <t> kandungan nutrisi lengkap :</t>
+                    <a id="edamame" href="#" target="_blank">Edamame</a>
+                </div>
+            </div>
+
+            <div class="resep">
+                 <h3 class="judul">bahan</h3>  
+                <div class="isi_resep" id="ingredients-list">
+                   
+                </div>
+            </div>
+
+            <div class="langkah_masak">
+                <h3 class="judul">Kandungan Nutrisi</h3>  
+                <div class="isi_langkah" id="nutrition-list">
+                   
+                </div>
+            </div>
+            
+        
+
+        </main>
+
+        <section id="gambar">
+
+            <div class="stickybox">
+                <div class="gambar">
+                    <div class="isi_gambar">
+ 
+                    </div>
+                </div>
+
+                <div class="tombol">
+                    <div class="tombol_kiri">
+                        
+                        <button class="button-back" id="button-back" onclick="changePage(-1)">
+                            <img src="image/right-arrow.png" class="image" width="25"height="25">
+                        </button>
+                    </div>
+
+                    <div class="tombol_kanan">
+                        <button class="button-next" id="button-next" onclick="changePage(1)">
+                            <img src="image/right-arrow.png" class="image" width="25"height="25">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+           
+        </section>
+
+    </div>
+</body>
+</html>
